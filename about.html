@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Story - North Star Electric</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .about-hero {
+            background: linear-gradient(rgba(26, 75, 140, 0.8), rgba(26, 75, 140, 0.8)),
+                        url('https://images.unsplash.com/photo-1621905251189-08b45d6a269e?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80');
+            background-size: cover;
+            background-position: center;
+            height: 40vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: var(--text-light);
+            margin-top: 80px;
+        }
+
+        .about-hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .about-hero p {
+            font-size: 1.2rem;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .story-section {
+            padding: 5rem 0;
+        }
+
+        .story-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            align-items: center;
+        }
+
+        .story-text {
+            font-size: 1.1rem;
+        }
+
+        .story-text p {
+            margin-bottom: 1.5rem;
+        }
+
+        .story-image {
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        .story-image img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .values-section {
+            padding: 5rem 0;
+            background-color: var(--off-white);
+        }
+
+        .values-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .value-card {
+            background-color: var(--text-light);
+            padding: 2rem;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .value-card i {
+            font-size: 2.5rem;
+            color: var(--bronze);
+            margin-bottom: 1rem;
+        }
+
+        .value-card h3 {
+            color: var(--primary-blue);
+            margin-bottom: 1rem;
+        }
+
+        .team-section {
+            padding: 5rem 0;
+        }
+
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .team-member {
+            background-color: var(--text-light);
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+
+        .team-member img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+        }
+
+        .team-member-info {
+            padding: 1.5rem;
+        }
+
+        .team-member h3 {
+            color: var(--primary-blue);
+            margin-bottom: 0.5rem;
+        }
+
+        .team-member p {
+            color: var(--bronze);
+            margin-bottom: 1rem;
+        }
+
+        .team-member .bio {
+            font-size: 0.9rem;
+            color: var(--text-dark);
+        }
+
+        @media (max-width: 768px) {
+            .about-hero h1 {
+                font-size: 2rem;
+            }
+
+            .story-content {
+                grid-template-columns: 1fr;
+            }
+
+            .story-image {
+                order: -1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo-container">
+                <div class="logo">
+                    <h1>North Star Electric</h1>
+                </div>
+                <div class="ecra-number">
+                    <p>ECRA #8942675</p>
+                </div>
+            </div>
+            <div class="contact-container">
+                <a href="tel:+1234567890" class="phone-number">
+                    <i class="fas fa-phone"></i> (123) 456-7890
+                </a>
+                <button class="hamburger-menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#services">Services</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="about-hero">
+            <div class="container">
+                <h1>Our Story</h1>
+                <p>Building trust through excellence in electrical services since 2016</p>
+            </div>
+        </section>
+
+        <section class="story-section">
+            <div class="container">
+                <div class="story-content">
+                    <div class="story-text">
+                        <h2>Our Journey</h2>
+                        <p>Founded in 2016, North Star Electric emerged from a vision to provide exceptional electrical services to the Chatham-Kent and Windsor regions. What started as a small team of dedicated electricians has grown into a trusted name in residential electrical services.</p>
+                        <p>Our founder, John Smith, brought over 15 years of experience in the electrical industry when he established North Star Electric. His commitment to quality workmanship and customer satisfaction has been the cornerstone of our success.</p>
+                        <p>Today, we're proud to serve our community with a team of licensed professionals who share the same dedication to excellence and safety.</p>
+                    </div>
+                    <div class="story-image">
+                        <img src="https://images.unsplash.com/photo-1621905252507-b35492cc74b4?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80" alt="North Star Electric Team">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="values-section">
+            <div class="container">
+                <h2>Our Values</h2>
+                <div class="values-grid">
+                    <div class="value-card">
+                        <i class="fas fa-shield-alt"></i>
+                        <h3>Safety First</h3>
+                        <p>We prioritize safety in every project, ensuring the highest standards of electrical workmanship and compliance.</p>
+                    </div>
+                    <div class="value-card">
+                        <i class="fas fa-star"></i>
+                        <h3>Quality</h3>
+                        <p>Excellence in every detail, from materials selection to final installation and testing.</p>
+                    </div>
+                    <div class="value-card">
+                        <i class="fas fa-handshake"></i>
+                        <h3>Integrity</h3>
+                        <p>Honest communication and transparent pricing are the foundation of our customer relationships.</p>
+                    </div>
+                    <div class="value-card">
+                        <i class="fas fa-users"></i>
+                        <h3>Community</h3>
+                        <p>We're proud to be part of our local community and give back through various initiatives.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="team-section">
+            <div class="container">
+                <h2>Our Team</h2>
+                <div class="team-grid">
+                    <div class="team-member">
+                        <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="John Smith">
+                        <div class="team-member-info">
+                            <h3>John Smith</h3>
+                            <p>Founder & Master Electrician</p>
+                            <p class="bio">With over 20 years of experience, John leads our team with expertise and dedication to quality.</p>
+                        </div>
+                    </div>
+                    <div class="team-member">
+                        <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Sarah Johnson">
+                        <div class="team-member-info">
+                            <h3>Sarah Johnson</h3>
+                            <p>Operations Manager</p>
+                            <p class="bio">Sarah ensures smooth operations and exceptional customer service across both locations.</p>
+                        </div>
+                    </div>
+                    <div class="team-member">
+                        <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Mike Wilson">
+                        <div class="team-member-info">
+                            <h3>Mike Wilson</h3>
+                            <p>Lead Electrician</p>
+                            <p class="bio">Mike brings 12 years of experience in residential and commercial electrical work.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>North Star Electric</h3>
+                    <p>ECRA #8942675</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact</h3>
+                    <p>Email: NorthStarElectric@gmail.ca</p>
+                    <p>Phone: (123) 456-7890</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 North Star Electric. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 

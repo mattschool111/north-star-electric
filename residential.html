@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Residential Electrical - North Star Electric</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .service-hero {
+            background: linear-gradient(rgba(26, 75, 140, 0.8), rgba(26, 75, 140, 0.8)),
+                        url('https://images.unsplash.com/photo-1621905251189-08b45d6a269e?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80');
+            background-size: cover;
+            background-position: center;
+            height: 40vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: var(--text-light);
+            margin-top: 80px;
+        }
+
+        .service-hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .service-hero p {
+            font-size: 1.2rem;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .service-content {
+            padding: 5rem 0;
+        }
+
+        .service-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            align-items: center;
+            margin-bottom: 4rem;
+        }
+
+        .service-text {
+            font-size: 1.1rem;
+        }
+
+        .service-text p {
+            margin-bottom: 1.5rem;
+        }
+
+        .service-image {
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        .service-image img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .features-section {
+            padding: 5rem 0;
+            background-color: var(--off-white);
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .feature-card {
+            background-color: var(--text-light);
+            padding: 2rem;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .feature-card i {
+            font-size: 2.5rem;
+            color: var(--bronze);
+            margin-bottom: 1rem;
+        }
+
+        .feature-card h3 {
+            color: var(--primary-blue);
+            margin-bottom: 1rem;
+        }
+
+        .cta-section {
+            padding: 5rem 0;
+            text-align: center;
+            background-color: var(--primary-blue);
+            color: var(--text-light);
+        }
+
+        .cta-button {
+            display: inline-block;
+            background-color: var(--bronze);
+            color: var(--text-light);
+            padding: 1rem 2rem;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 2rem;
+            transition: 0.3s;
+        }
+
+        .cta-button:hover {
+            background-color: var(--dark-bronze);
+        }
+
+        @media (max-width: 768px) {
+            .service-hero h1 {
+                font-size: 2rem;
+            }
+
+            .service-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .service-image {
+                order: -1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo-container">
+                <div class="logo">
+                    <h1>North Star Electric</h1>
+                </div>
+                <div class="ecra-number">
+                    <p>ECRA #8942675</p>
+                </div>
+            </div>
+            <div class="contact-container">
+                <a href="tel:+1234567890" class="phone-number">
+                    <i class="fas fa-phone"></i> (123) 456-7890
+                </a>
+                <button class="hamburger-menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#services">Services</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="service-hero">
+            <div class="container">
+                <h1>Residential Electrical</h1>
+                <p>Professional electrical services for your home</p>
+            </div>
+        </section>
+
+        <section class="service-content">
+            <div class="container">
+                <div class="service-grid">
+                    <div class="service-text">
+                        <h2>Complete Home Electrical Solutions</h2>
+                        <p>Our residential electrical services cover all your home's electrical needs, from routine maintenance to complete home rewiring. Our licensed electricians are experienced in handling both small repairs and major electrical projects.</p>
+                        <p>We prioritize safety and quality in every job, ensuring your home's electrical system meets or exceeds current safety standards. Whether you need emergency repairs, upgrades, or new installations, we're here to help.</p>
+                    </div>
+                    <div class="service-image">
+                        <img src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80" alt="Residential Electrical Services">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="features-section">
+            <div class="container">
+                <h2>Our Residential Services</h2>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <i class="fas fa-tools"></i>
+                        <h3>Repairs & Maintenance</h3>
+                        <p>Diagnostic services and repairs for all electrical issues, from flickering lights to power outages.</p>
+                    </div>
+                    <div class="feature-card">
+                        <i class="fas fa-home"></i>
+                        <h3>Home Upgrades</h3>
+                        <p>Electrical panel upgrades, circuit breaker installations, and home rewiring services.</p>
+                    </div>
+                    <div class="feature-card">
+                        <i class="fas fa-plug"></i>
+                        <h3>New Installations</h3>
+                        <p>Installation of new outlets, lighting fixtures, and dedicated circuits for appliances.</p>
+                    </div>
+                    <div class="feature-card">
+                        <i class="fas fa-shield-alt"></i>
+                        <h3>Safety Inspections</h3>
+                        <p>Comprehensive electrical safety inspections and code compliance checks.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta-section">
+            <div class="container">
+                <h2>Need Electrical Work?</h2>
+                <p>Contact us today to schedule a consultation for your residential electrical needs.</p>
+                <a href="index.html#contact" class="cta-button">Get Started</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>North Star Electric</h3>
+                    <p>ECRA #8942675</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact</h3>
+                    <p>Email: NorthStarElectric@gmail.ca</p>
+                    <p>Phone: (123) 456-7890</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 North Star Electric. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 

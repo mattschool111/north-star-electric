@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Home Integration - North Star Electric</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .service-hero {
+            background: linear-gradient(rgba(26, 75, 140, 0.8), rgba(26, 75, 140, 0.8)),
+                        url('https://images.unsplash.com/photo-1558002038-1055907df827?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80');
+            background-size: cover;
+            background-position: center;
+            height: 40vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: var(--text-light);
+            margin-top: 80px;
+        }
+
+        .service-hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .service-hero p {
+            font-size: 1.2rem;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .service-content {
+            padding: 5rem 0;
+        }
+
+        .service-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            align-items: center;
+            margin-bottom: 4rem;
+        }
+
+        .service-text {
+            font-size: 1.1rem;
+        }
+
+        .service-text p {
+            margin-bottom: 1.5rem;
+        }
+
+        .service-image {
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        .service-image img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .features-section {
+            padding: 5rem 0;
+            background-color: var(--off-white);
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .feature-card {
+            background-color: var(--text-light);
+            padding: 2rem;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .feature-card i {
+            font-size: 2.5rem;
+            color: var(--bronze);
+            margin-bottom: 1rem;
+        }
+
+        .feature-card h3 {
+            color: var(--primary-blue);
+            margin-bottom: 1rem;
+        }
+
+        .cta-section {
+            padding: 5rem 0;
+            text-align: center;
+            background-color: var(--primary-blue);
+            color: var(--text-light);
+        }
+
+        .cta-button {
+            display: inline-block;
+            background-color: var(--bronze);
+            color: var(--text-light);
+            padding: 1rem 2rem;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 2rem;
+            transition: 0.3s;
+        }
+
+        .cta-button:hover {
+            background-color: var(--dark-bronze);
+        }
+
+        @media (max-width: 768px) {
+            .service-hero h1 {
+                font-size: 2rem;
+            }
+
+            .service-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .service-image {
+                order: -1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo-container">
+                <div class="logo">
+                    <h1>North Star Electric</h1>
+                </div>
+                <div class="ecra-number">
+                    <p>ECRA #8942675</p>
+                </div>
+            </div>
+            <div class="contact-container">
+                <a href="tel:+1234567890" class="phone-number">
+                    <i class="fas fa-phone"></i> (123) 456-7890
+                </a>
+                <button class="hamburger-menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#services">Services</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="service-hero">
+            <div class="container">
+                <h1>Smart Home Integration</h1>
+                <p>Transform your home with cutting-edge smart technology</p>
+            </div>
+        </section>
+
+        <section class="service-content">
+            <div class="container">
+                <div class="service-grid">
+                    <div class="service-text">
+                        <h2>Modernize Your Home</h2>
+                        <p>Our smart home integration services bring the future of home automation to your doorstep. We specialize in installing and configuring smart devices that enhance your home's comfort, security, and energy efficiency.</p>
+                        <p>From smart lighting and thermostats to security systems and voice-controlled devices, we ensure seamless integration of all your smart home components. Our expert technicians are certified in the latest smart home technologies and can help you create a fully connected home environment.</p>
+                    </div>
+                    <div class="service-image">
+                        <img src="https://images.unsplash.com/photo-1558002038-1055907df827?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80" alt="Smart Home Integration">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="features-section">
+            <div class="container">
+                <h2>Our Smart Home Solutions</h2>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <i class="fas fa-lightbulb"></i>
+                        <h3>Smart Lighting</h3>
+                        <p>Control your lights from anywhere with smart bulbs and switches. Set schedules, create scenes, and save energy.</p>
+                    </div>
+                    <div class="feature-card">
+                        <i class="fas fa-temperature-high"></i>
+                        <h3>Smart Thermostats</h3>
+                        <p>Optimize your home's temperature with programmable thermostats that learn your preferences.</p>
+                    </div>
+                    <div class="feature-card">
+                        <i class="fas fa-shield-alt"></i>
+                        <h3>Security Systems</h3>
+                        <p>Monitor your home with smart cameras, doorbells, and security sensors for peace of mind.</p>
+                    </div>
+                    <div class="feature-card">
+                        <i class="fas fa-microphone"></i>
+                        <h3>Voice Control</h3>
+                        <p>Integrate voice assistants to control your entire home with simple commands.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta-section">
+            <div class="container">
+                <h2>Ready to Transform Your Home?</h2>
+                <p>Contact us today to schedule a consultation and learn how we can make your home smarter.</p>
+                <a href="index.html#contact" class="cta-button">Get Started</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>North Star Electric</h3>
+                    <p>ECRA #8942675</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact</h3>
+                    <p>Email: NorthStarElectric@gmail.ca</p>
+                    <p>Phone: (123) 456-7890</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 North Star Electric. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 
